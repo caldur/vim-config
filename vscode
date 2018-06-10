@@ -1,0 +1,127 @@
+// Place your settings in this file to overwrite the default settings
+{
+    //common
+    "explorer.confirmDragAndDrop": false,
+    //file assoc
+    "files.associations": {
+        "*.nim": "nim"
+    },
+    "window.restoreWindows": "folders",
+    //fonts
+    "editor.fontFamily": "'Source Code Pro'",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    //Tab and indent
+    "editor.tabSize": 4,
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "indent",
+    "editor.wordWrapColumn": 80,
+    "editor.lineNumbers": "relative",
+    //Theme and icons
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    //Rid of excess whitespace and add EOF newline for c
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.renderWhitespace": "boundary",
+    //Terminal
+    "terminal.integrated.fontFamily": "'Source Code Pro'",
+    "terminal.integrated.fontSize": 16,
+    //C settings
+    "[cpp]": {
+        "editor.tabSize": 4,
+        "files.insertFinalNewline": true,
+    },
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_style": "{BasedOnStyle: LLVM, IndentWidth: 8, UseTab: Always, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ReflowComments: true, AllowShortFunctionsOnASingleLine: None}",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "clang.cxxflags": [
+        "-std=c++14"
+    ],
+    //nim settings
+    "[nim]": {
+        "editor.tabSize": 2,
+    },
+    "window.zoomLevel": 1,
+    //vim settings
+    "vim.cmdLineInitialColon": true,
+    "vim.hlsearch": true,
+    "vim.leader": ",",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "right"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "hideSuggestWidget",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.tasks.build",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.terminal.focus",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.toggleActivityBarVisibility",
+                    "args": []
+                }
+            ]
+        },
+    ],
+    "workbench.activityBar.visible": true
+}
